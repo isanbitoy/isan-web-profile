@@ -102,16 +102,18 @@ export default {
 }
 fieldset {
   	border: medium none !important;
-  	margin: 0 0 10px 0;
+  	margin: 0 0 10px;
   	min-width: 100%;
   	width: 100%;
 }
 .input-field {
+    min-width: 100%;
     width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
-  	margin: 0 0 5px 0;
+  	margin: 0 0 5px;
   	padding: 10px;
+    resize: none;
 }
 /*
 #contact input[type="text"],
