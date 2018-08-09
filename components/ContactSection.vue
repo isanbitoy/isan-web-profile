@@ -109,8 +109,7 @@ fieldset {
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    max-width: 100%;
-  	width: 100%;
+  	width: 480px;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
