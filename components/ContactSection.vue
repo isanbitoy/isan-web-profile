@@ -108,7 +108,7 @@ fieldset {
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    height: auto;
+    max-width: 100%;
     width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
@@ -144,9 +144,6 @@ fieldset {
 #contact button[type="submit"]:hover {
     background-color: #a6a6a6;
     color: #fff;
-}
-#contact input:active {
-    width: auto;
 }
 #contact input:focus,
 #contact textarea:focus {
