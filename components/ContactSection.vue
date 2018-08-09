@@ -104,6 +104,7 @@ fieldset {
   	margin: 0 0 10px;
   	width: 100%;
 }
+#contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
@@ -114,6 +115,7 @@ fieldset {
   	margin: 0 0 5px;
   	padding: 10px;
 }
+#contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact textarea:hover {
