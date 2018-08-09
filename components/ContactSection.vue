@@ -5,7 +5,7 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<div><input name="proponent" placeholder="Name" type="text" required></input></div>
+      			<div><input name="proponent" placeholder="Name" type="text"></input></div>
     		</fieldset>
 
     		<fieldset>
