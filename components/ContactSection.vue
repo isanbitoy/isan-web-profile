@@ -5,19 +5,19 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<div class="input-field"><input name="name" placeholder="Name" type="text" required></div>
+      			<div><input name="name" placeholder="Name" type="text" required></div>
     		</fieldset>
 
     		<fieldset>
-      			<div class="input-field"><input name="email" placeholder="Email Address" type="email" required></div>
+      			<div><input name="email" placeholder="Email Address" type="email" required></div>
     		</fieldset>
 
     		<fieldset>
-      			<div class="input-field"><input name="phone" placeholder="Phone Number (optional)" type="tel" required></div>
+      			<div><input name="phone" placeholder="Phone Number (optional)" type="tel" required></div>
     		</fieldset>
     			
     		<fieldset>
-      			<div class="input-field"><textarea name="message" placeholder="Type your message here...." required></textarea></div>
+      			<div><textarea name="message" placeholder="Type your message here...." required></textarea></div>
     		</fieldset>
 
         <fieldset>
@@ -106,24 +106,16 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-.input-field {
-    min-width: 100%;
-    width: 100%;
-  	border: 1px solid #ccc;
-  	background: #FFF;
-  	margin: 0 0 5px;
-  	padding: 10px;
-    resize: none;
-}
-/*
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
+    min-width: 100%;
   	width: 100%;
+    resize: none;
   	border: 1px solid #ccc;
   	background: #FFF;
-  	margin: 0 0 5px 0;
+  	margin: 0 0 5px;
   	padding: 10px;
 }
 #contact input[type="text"]:hover,
@@ -134,7 +126,7 @@ fieldset {
   	-moz-transition: border-color 0.3s ease-in-out;
   	transition: border-color 0.3s ease-in-out;
  	  border: 1px solid #999;
-}*/
+}
 #contact textarea {
   	height: 100px;
   	max-width: 100%;
