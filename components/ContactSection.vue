@@ -106,7 +106,7 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-.field-input {
+.input-field {
     width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
