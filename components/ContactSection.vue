@@ -102,14 +102,12 @@ export default {
 fieldset {
   	border: medium none !important;
   	margin: 0 0 10px;
-  	min-width: 100%;
   	width: 100%;
 }
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-  	width: 480px;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
@@ -150,7 +148,7 @@ fieldset {
 }
 #contact input:focus,
 #contact textarea:focus {
-    min-width: 100%;
+    max-width: 100%;
     outline: 0;
     border: 1px solid #999;
 }
