@@ -111,8 +111,6 @@ fieldset {
     height: 100px;
     border: 1px solid #ccc;
   	background: #FFF;
-  	margin: 0 0 5px;
-  	padding: 10px;
 }
 #contact input[type="email"],
 #contact input[type="tel"],
