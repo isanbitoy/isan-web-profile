@@ -147,6 +147,7 @@ fieldset {
     background-color: #a6a6a6;
     color: #fff;
 }
+/*
 #contact input:focus,
 #contact textarea:focus {
     outline: 0;
@@ -164,4 +165,5 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+*/
 </style>
