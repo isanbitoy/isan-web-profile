@@ -108,9 +108,12 @@ fieldset {
 }
 .pota {
     width: 500px;
+    height: 100px;
+    border: 1px solid #ccc;
+  	background: #FFF;
+  	margin: 0 0 5px;
+  	padding: 10px;
 }
-/*
-#contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
@@ -121,7 +124,6 @@ fieldset {
   	margin: 0 0 5px;
   	padding: 10px;
 }
-#contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact textarea:hover {
@@ -130,7 +132,7 @@ fieldset {
   	transition: border-color 0.3s ease-in-out;
  	  border: 1px solid #999;
 }
-*/
+
 #contact textarea {
   	height: 100px;
   	max-width: 100%;
