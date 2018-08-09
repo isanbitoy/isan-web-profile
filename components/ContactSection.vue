@@ -5,7 +5,7 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<div><input class="pota" name="proponent" placeholder="Name" type="text" required></input></div>
+      			<div><input name="proponent" placeholder="Name" type="text" required></input></div>
     		</fieldset>
 
     		<fieldset>
@@ -146,9 +146,12 @@ fieldset {
     background-color: #a6a6a6;
     color: #fff;
 }
-/*
+#contact input:active {
+    width: auto;
+}
 #contact input:focus,
 #contact textarea:focus {
+    min-width: 100%;
     outline: 0;
     border: 1px solid #999;
 }
@@ -164,5 +167,5 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
-*/
+
 </style>
