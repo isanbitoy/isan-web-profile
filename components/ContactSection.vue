@@ -5,23 +5,23 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<input name="proponent" placeholder="Name" type="email" required/>
+      			<input name="proponent" placeholder="Name" type="text" required/>
     		</fieldset>
 
     		<fieldset>
-      			<div><input name="email" placeholder="Email Address" type="email" required/></div>
+      			<input name="email" placeholder="Email Address" type="email" required/>
     		</fieldset>
 
     		<fieldset>
-      			<div><input name="phone" placeholder="Phone Number (optional)" type="tel" required/></div>
+      			<input name="phone" placeholder="Phone Number (optional)" type="tel" required/>
     		</fieldset>
     			
     		<fieldset>
-      			<div><textarea name="message" placeholder="Type your message here...." required></textarea></div>
+      			<textarea name="message" placeholder="Type your message here...." required></textarea>
     		</fieldset>
 
         <fieldset>
-            <div><input type="text" name="_gotcha" style="display:none"/></div>
+            <input type="text" name="_gotcha" style="display:none"/>
         </fieldset>
 
     		<fieldset>
@@ -145,7 +145,7 @@ fieldset {
 }
 #contact input:focus,
 #contact textarea:focus {
-    max-width: 100%;
+    min-width: 100%;
     outline: 0;
     border: 1px solid #999;
 }
