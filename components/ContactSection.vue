@@ -1,30 +1,30 @@
 <template>
 	<section class="contact-wrapper">
     
-		<div class="container">
+	<div class="container">
       <div id="map" class="map"></div>
-			<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
-    			<fieldset>
-      			<input placeholder="Name" type="text" name="name" tabindex="1" required autofocus>
-    			</fieldset>
+		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
+    		<fieldset>
+      			<input name="name" placeholder="Name" type="text" tabindex="1" required>
+    		</fieldset>
 
-    			<fieldset>
-      			<input placeholder="Email Address" type="email" name="emailAdd" tabindex="2" required>
-    			</fieldset>
+    		<fieldset>
+      			<input name="email" placeholder="Email Address" type="email" tabindex="2" required>
+    		</fieldset>
 
-    			<fieldset>
-      			<input placeholder="Phone Number (optional)" type="tel" name="phoneNum" tabindex="3" required>
-    			</fieldset>
+    		<fieldset>
+      			<input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required>
+    		</fieldset>
     			
-    			<fieldset>
-      			<textarea placeholder="Type your message here...." name="message" tabindex="4" required></textarea>
-    			</fieldset>
+    		<fieldset>
+      			<textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
+    		</fieldset>
 
-    			<fieldset>
-      			<button name="submit" type="submit" id="contact-submit" value="Send" data-submit="...Sending">Submit</button>
-    			</fieldset>
- 			</form>
- 		</div>
+    		<fieldset>
+      			<button name="submit" type="submit" id="contact-submit" value="Message Sent" data-submit="...Sending">Submit</button>
+    		</fieldset>
+ 		</form>
+ 	</div>
 
 	</section>
 </template>
@@ -74,10 +74,10 @@ export default {
     display: none;
 }
 .contact-wrapper {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .container {
     position: relative;
@@ -97,7 +97,7 @@ export default {
 }
 fieldset {
   	border: medium none !important;
-  	margin: 0 0 10px;
+  	margin: 0 0 10px 0;
   	min-width: 100%;
   	width: 100%;
 }
@@ -108,7 +108,7 @@ fieldset {
   	width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
-  	margin: 0 0 5px;
+  	margin: 0 0 5px 0;
   	padding: 10px;
 }
 #contact input[type="text"]:hover,
