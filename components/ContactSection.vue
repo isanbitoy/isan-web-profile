@@ -106,9 +106,7 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-.pota {
-    width: 500px;
-}
+#contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
