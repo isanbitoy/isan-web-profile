@@ -5,19 +5,19 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<div><input name="name" placeholder="Name" type="text" tabindex="1" required></div>
+      			<div><input name="name" placeholder="Name" type="text" required></div>
     		</fieldset>
 
     		<fieldset>
-      			<div><input name="email" placeholder="Email Address" type="email" tabindex="2" required></div>
+      			<div><input name="email" placeholder="Email Address" type="email" required></div>
     		</fieldset>
 
     		<fieldset>
-      			<div><input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required></div>
+      			<div><input name="phone" placeholder="Phone Number (optional)" type="tel" required></div>
     		</fieldset>
     			
     		<fieldset>
-      			<div><textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea></div>
+      			<div><textarea name="message" placeholder="Type your message here...." required></textarea></div>
     		</fieldset>
 
         <fieldset>
