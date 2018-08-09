@@ -3,9 +3,9 @@
     
 		<div class="container">
       <div id="map" class="map"></div>
-			<form id="contact" action="" method="post">
+			<form id="contact" name="contact" action="" method="post" netlify>
     			<fieldset>
-      			<input placeholder="Name" type="text" tabindex="1" required autofocus>
+      			<input placeholder="Name" type="text" name="form-name" value="contact" tabindex="1" required autofocus>
     			</fieldset>
 
     			<fieldset>
@@ -75,8 +75,6 @@ export default {
 }
 .contact-wrapper {
 	  position: absolute;
-	  width: auto;
-    height: auto;
 	  top: 50%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
@@ -101,7 +99,6 @@ fieldset {
   	border: medium none !important;
   	margin: 0 0 10px;
   	min-width: 100%;
-  	padding: 0;
   	width: 100%;
 }
 #contact input[type="text"],
