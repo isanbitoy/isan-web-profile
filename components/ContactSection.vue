@@ -20,6 +20,10 @@
       			<textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
     		</fieldset>
 
+        <fieldset>
+            <input type="text" name="_gotcha" style="display:none"/>
+        </fieldset>
+
     		<fieldset>
       			<button name="submit" type="submit" id="contact-submit" value="Message Sent" data-submit="...Sending">Submit</button>
     		</fieldset>
@@ -83,6 +87,7 @@ export default {
     position: relative;
     display: block;
   	width: 520px;
+    height: auto;
   	margin: 0;
     padding: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
