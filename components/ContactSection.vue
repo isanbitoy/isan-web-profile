@@ -108,7 +108,6 @@ fieldset {
 }
 .pota {
     width: 500px;
-    height: 100px;
     border: 1px solid #ccc;
   	background: #FFF;
 }
