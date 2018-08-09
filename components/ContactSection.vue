@@ -78,10 +78,10 @@ export default {
     display: none;
 }
 .contact-wrapper {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
 }
 .container {
     position: relative;
@@ -110,9 +110,8 @@ fieldset {
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    min-width: 100%;
+    min-width: 0;
   	width: 100%;
-    resize: none;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
