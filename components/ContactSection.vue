@@ -108,13 +108,11 @@ fieldset {
 }
 .pota {
     width: 500px;
-    border: 1px solid #ccc;
-  	background: #FFF;
 }
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    min-width: 100%;
+    max-width: 100%;
   	width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
