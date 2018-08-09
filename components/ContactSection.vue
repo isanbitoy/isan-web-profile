@@ -9,15 +9,15 @@
     		</fieldset>
 
     		<fieldset>
-      			<input name="email" placeholder="Email Address" type="email" tabindex="2" required>
+      			<div><input name="email" placeholder="Email Address" type="email" tabindex="2" required></div>
     		</fieldset>
 
     		<fieldset>
-      			<input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required>
+      			<div><input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required></div>
     		</fieldset>
     			
     		<fieldset>
-      			<textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
+      			<div><textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea></div>
     		</fieldset>
 
         <fieldset>
