@@ -3,9 +3,9 @@
     
 		<div class="container">
       <div id="map" class="map"></div>
-			<form id="contact" name="contact" action="" method="post" netlify>
+			<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     			<fieldset>
-      			<input placeholder="Name" type="text" name="form-name" value="contact" tabindex="1" required autofocus>
+      			<input placeholder="Name" type="text" tabindex="1" required autofocus>
     			</fieldset>
 
     			<fieldset>
@@ -21,7 +21,7 @@
     			</fieldset>
 
     			<fieldset>
-      			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      			<button name="submit" type="submit" id="contact-submit" value="Send" data-submit="...Sending">Submit</button>
     			</fieldset>
  			</form>
  		</div>
