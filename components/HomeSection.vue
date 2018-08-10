@@ -41,8 +41,6 @@
 }
 .home-wrapper {
 	  position: absolute;
-	  width: auto;
-    height: auto;
 	  top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -54,8 +52,8 @@
   	-webkit-transform-style: preserve-3d;
   	transition: all 0.9s ease;
   	font-family: Arial, Sans-Serif;
-  	width: 420px;
-  	height: 560px;
+  	width: 26.25em;
+  	height: 35em; 
   	color: white;
   	display: inline-block;
   	margin: 10px;
@@ -184,13 +182,13 @@ export default {
 			title: 'full-stack web developer | mobile app developer',
 			isActive: false,
 			detail: [
-						{marker: 'fa fa-map-marker', info: ' Tagum city, Davao del Norte'},
-						{marker: 'fa fa-phone', info: ' (+63)995-108-5425'},
+						{marker: 'fa fa-map-marker', info: ' Tagum City, Davao del Norte'},
+						{marker: 'fa fa-phone', info: ' (+63) 995-108-5425'},
 						{marker: 'fa fa-envelope', info: 'isanbitoy@gmail.com'}
 				  	],
 			description: [
 							'Lisandro is a full-stack web developer, mobile app and indie game developer. Proficient with various programming languages such as Java, Python, HTML5/CSS3, JavaScript and SQL.',
-              'He is fueled by his passion and interest for developing new exciting technologies that indulge his enthusiastic personality. Eager to strengthen and widen his scope on his academic foundation in information technology. Already developed some projects which he shares in the open source community.',
+              'He is fueled by his passion and interest for developing new exciting technologies that indulge his enthusiastic personality. Eager to strengthen and widen the scope on his academic foundation in information technology. Already developed some projects which he shares in the open source community.',
 							'On his free time you find him playing basketball, cycling, and listening to music. He is an avid fan of tv series and old movies, a pet lover and an active student of a brazilian jiu-jitu.',
 							'Lisandro is currently working as a freelancer and is always interested in challenges, he receieve various freelance project such as front-end development and game character design.'
 						 ]

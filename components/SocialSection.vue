@@ -99,7 +99,7 @@ export default {
 .fa-codepen:hover {
   	background: #111;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 62em) {
 	.social-icon-container {
 		display: flex;
 		margin-top: 0;

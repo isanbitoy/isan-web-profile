@@ -5,19 +5,19 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<input name="name" placeholder="Name" type="email" required/>
+      			<input name="name" placeholder="Name" type="text" tabindex="1" required>
     		</fieldset>
 
     		<fieldset>
-      			<input name="email" placeholder="Email Address" type="email" required/>
+      			<input name="email" placeholder="Email Address" type="email" tabindex="2" required>
     		</fieldset>
 
     		<fieldset>
-      			<input name="phone" placeholder="Phone Number (optional)" type="tel" required/>
+      			<input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required>
     		</fieldset>
     			
     		<fieldset>
-      			<textarea name="message" placeholder="Type your message here...." required></textarea>
+      			<textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
     		</fieldset>
 
         <fieldset>
@@ -86,7 +86,7 @@ export default {
 .container {
     position: relative;
     display: block;
-  	width: 520px;
+  	width: 40em;
   	margin: 0;
     padding: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -102,18 +102,23 @@ export default {
 fieldset {
   	border: medium none !important;
   	margin: 0 0 10px;
+  	min-width: 100%;
   	width: 100%;
 }
+input {
+    box-sizing: border-box;
+}
+#contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    max-width: 100%;
-    width: 100%;
+  	width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
   	padding: 10px;
 }
+#contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact textarea:hover {
@@ -145,7 +150,6 @@ fieldset {
 }
 #contact input:focus,
 #contact textarea:focus {
-    min-width: 100%;
     outline: 0;
     border: 1px solid #999;
 }
@@ -161,5 +165,4 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
-
 </style>
