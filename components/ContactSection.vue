@@ -107,6 +107,8 @@ fieldset {
 }
 input {
     box-sizing: border-box;
+    min-width: 100%;
+    max-width: 100%;
 }
 #contact input[type="text"],
 #contact input[type="email"],
