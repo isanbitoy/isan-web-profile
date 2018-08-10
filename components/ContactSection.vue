@@ -5,7 +5,7 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<input name="name" placeholder="Name" type="text" tabindex="1" required>
+      			<input type="text" name="name" placeholder="Name" tabindex="1" required>
     		</fieldset>
 
     		<fieldset>
@@ -105,7 +105,13 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-#contact input[type="text"],
+#contact input[type="text"] {
+    box-sizing: border-box;
+  	width: 100%;
+  	border: 1px solid #ccc;
+  	background: #FFF;
+    padding: 10px;
+}
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
@@ -115,6 +121,7 @@ fieldset {
   	background: #FFF;
   	margin: 0 0 5px;
   	padding: 10px;
+    border-radius: 4px;
 }
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
