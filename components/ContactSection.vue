@@ -110,7 +110,7 @@ fieldset {
 #contact input[type="tel"],
 #contact textarea {
     box-sizing: border-box;
-  	width: calc(100% - 10px);
+  	width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
