@@ -5,15 +5,15 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<input type="text" name="name" placeholder="Name" tabindex="1" size="100" required>
+      			<input type="text" name="name" placeholder="Name" tabindex="1" required>
     		</fieldset>
 
     		<fieldset>
-      			<input name="email" placeholder="Email Address" type="email" tabindex="2" required>
+      			<input type="email" name="email" placeholder="Email Address" tabindex="2" required>
     		</fieldset>
 
     		<fieldset>
-      			<input name="phone" placeholder="Phone Number (optional)" type="tel" tabindex="3" required>
+      			<input type="tel" name="phone" placeholder="Phone Number (optional)" tabindex="3" required>
     		</fieldset>
     			
     		<fieldset>
@@ -105,23 +105,26 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-#contact input[type="text"] {
+input {
     box-sizing: border-box;
-  	width: 100%;
-  	border: 1px solid #ccc;
-  	background: #FFF;
+    min-width: 100%;
+    max-width: 100%;
+}
+#contact input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
     padding: 10px;
 }
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact textarea {
-    box-sizing: border-box;
   	width: 100%;
   	border: 1px solid #ccc;
   	background: #FFF;
   	margin: 0 0 5px;
   	padding: 10px;
-    border-radius: 4px;
 }
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
