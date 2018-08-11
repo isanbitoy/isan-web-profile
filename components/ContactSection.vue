@@ -114,6 +114,7 @@ fieldset {
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
+    border-radius: 4px;
 }
 .input-field:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
