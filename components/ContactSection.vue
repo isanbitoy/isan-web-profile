@@ -5,19 +5,19 @@
       <div id="map" class="map"></div>
 		<form id="contact" action="https://formspree.io/isanbitoy@gmail.com" method="POST">
     		<fieldset>
-      			<input class="u-name" type="text" name="name" placeholder="Name" tabindex="1" required>
+      			<input class="input-field" type="text" name="name" placeholder="Name" tabindex="1" required>
     		</fieldset>
 
     		<fieldset>
-      			<input type="email" name="email" placeholder="Email Address" tabindex="2" required>
+      			<input class="input-field" type="email" name="email" placeholder="Email Address" tabindex="2" required>
     		</fieldset>
 
     		<fieldset>
-      			<input type="tel" name="phone" placeholder="Phone Number (optional)" tabindex="3" required>
+      			<input class="input-field" type="tel" name="phone" placeholder="Phone Number (optional)" tabindex="3" required>
     		</fieldset>
     			
     		<fieldset>
-      			<textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
+      			<textarea class="input-field" name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
     		</fieldset>
 
         <fieldset>
@@ -105,40 +105,21 @@ fieldset {
   	min-width: 100%;
   	width: 100%;
 }
-input {
+.input-field {
     box-sizing: border-box;
     min-width: 100%;
     max-width: 100%;
-}
-.u-name {
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
     padding: 10px;
 }
-.u-name:hover {
+.input-field:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #999;
-}
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact textarea {
-  	width: 100%;
-  	border: 1px solid #ccc;
-  	background: #FFF;
-  	margin: 0 0 5px;
-  	padding: 10px;
-}
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact textarea:hover {
-  	-webkit-transition: border-color 0.3s ease-in-out;
-  	-moz-transition: border-color 0.3s ease-in-out;
-  	transition: border-color 0.3s ease-in-out;
- 	  border: 1px solid #999;
 }
 #contact textarea {
   	height: 100px;
