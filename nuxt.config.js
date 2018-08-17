@@ -16,7 +16,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/leaflet@1.3.3/dist/leaflet.css'}
+      { rel: 'stylesheet', href: 'https://unpkg.com/leaflet@1.3.3/dist/leaflet.css' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' }
     ]
   },
   /*
