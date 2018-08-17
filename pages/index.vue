@@ -1,15 +1,15 @@
 <template>
   <main>
-    <section class="container contact"><ContactSection/></section>
+    <section class="container contact animated fadeInRight"><ContactSection/></section>
       
-    <section class="container home"><HomeSection/></section>
+    <section class="container home animated fadeInLeft"><HomeSection/></section>
 
-    <section class="container social"><SocialSection/></section>
+    <section class="container social animated fadeInUp"><SocialSection/></section>
 
     <section class="container footer">
       <div class="footer-wrapper">
           Content &copy; 2018 
-          | isanbitoy
+          | Lisandro Bitoy
           | powered by <a v-bind:title="nuxtLink" v-bind:href="nuxtLink" target="_blank" style="text-decoration:none; color:#fff">Nuxt</a> 
           | <a v-bind:title="vueLink" v-bind:href="vueLink" target="_blank" style="text-decoration:none; color:#fff">Vue</a>
       </div>
@@ -40,6 +40,9 @@ export default {
 <style>
 [v-cloak] {
     display: none;
+}
+body {
+    background-color: #4e9bfa;
 }
 main {
     display: grid;
