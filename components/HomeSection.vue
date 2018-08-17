@@ -1,36 +1,34 @@
 <template>
 	<div class="home-wrapper">
 	
-      	<div class="card isan" v-bind:class="{ flip:isActive }"  @click="toggleActive()">
+  <div class="card isan">
+    <div class="img-box photo">
+      <div class="info-box" v-bind:class="{ view:isActive }">
+        <div class="main-info" style="padding:10px">
+          <h2 style="font-size: 32px">{{ name }}</h2>
+          <span>{{ title }}</span>
+        </div>
+        <div class="detailed-info">
+          <div v-for="(details, index) in detail" v-bind:key="index">
+            <span class="icon" v-bind:class="details.marker"></span>
+            <span>{{ details.info }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      		<div class="face front"> 
-      			<div class="main-info">
-      				<h2 style="font-size: 32px">{{ name }}</h2>
-      				<span>{{ title }}</span>
-      			</div>
-     
-      			<div class="details">
-      				<div v-for="(details, index) in detail" v-bind:key="index">
-      					<span class="icon" v-bind:class="details.marker"></span>
-      					<span>{{ details.info }}</span>
-      				</div>
-      			</div>
-      		</div>
-      		
-      		<div class="face back">
-      			<div class="description">
-      				<h1 style="padding-bottom:5px">About Me</h1>
-      				<p v-for="(desc, index) in description" v-bind:key="index">
-      					{{ desc }}
-      				</p>
-      			</div>
-      			<div class="button-wrapper">
-        			<a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-1"><span>Portfolio&nbsp;</span></button></a>
-        			<a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-2"><span>Resume&nbsp;</span></button></a>
-      			</div>
-      		</div>
-
-      	</div>
+    <div class="overlay" v-bind:class="{ view:isActive }">
+      <div class="about-me">
+        <h1 style="padding-top:20px; padding-bottom:5px">About Me</h1>
+        <p style="padding-bottom:5px" v-for="(desc, index) in description" v-bind:key="index">{{ desc }}</p>
+      </div>
+    </div>
+    <div class="button-wrapper" v-bind:class="{ view:isActive }">
+      <a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-a"><span>Portfolio&nbsp;</span></button></a>
+      <a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-b"><span>Resume&nbsp;</span></button></a>
+    </div>
+    <span class="trigger-button" v-bind:class="{ view:isActive }" @click="toggleActive()"></span>
+  </div>
       	
 	</div>
 </template>
@@ -39,136 +37,160 @@
 [v-cloak] {
     display: none;
 }
+/*content wrapper*/
 .home-wrapper {
 	  position: absolute;
 	  top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* front content */
 .card {
-  	position: relative;
-  	text-align: left;
-  	transform-style: preserve-3d; 
-  	-webkit-transform-style: preserve-3d;
-  	transition: all 0.9s ease;
-  	font-family: Arial, Sans-Serif;
-  	width: 26.25em;
-  	height: 35em; 
-  	color: white;
-  	display: inline-block;
-  	margin: 10px;
-  	border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.card.flip {
-  	-webkit-transform: rotateY(-180deg);
-          	transform: rotateY(-180deg);
-}
-.card .front {
-	  background-size: contain;
-  	overflow: hidden;
-  	-webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.card .front::before {
-	  content: '';
-	  position: absolute;
-  	display: block;
-  	top: 0;
-  	left: 0;
-  	right: 0;
-  	bottom: 0;
-  	background: linear-gradient(135deg, #fff, #1a57e6);
-  	opacity: .15;
-  	z-index: -1;
-}
-.card .face {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	bottom: 0px;
-  	right: 0px;
-  	-webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  	-webkit-transform: translateZ(0.5px);
-          transform: translateZ(0.5px);
+    position: relative;
+    width: 26.25em;
+    height: 35em;
+    font-family: Arial, Sans-Serif;
+    text-align: left;
+    color: white;
+    margin: 10px;
     border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0,0,0,.25); 
 }
-.isan .front {
-  	background-image: url(/images/isan.jpg);
-  	background-size: 110%;
-  	background-position: 0% 20%;
-  	transition: background 0.3s;
+.img-box {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.main-info {
-  	position: absolute;
-  	display: block;
-  	bottom: 25%;
-  	margin: 0;
-  	line-height: 1.5em;
-  	padding: 10px;
+.card .img-box {
+    position: absolute;
+    border-radius: 6px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
 }
-.details {
-	  border-top: 2px solid #fff;
-	  position: absolute;
-	  background: #7b68ee; /*4682b4 7b68ee*/
-	  height: 25%;
-	  width: 100%;
-	  bottom: 0;
-	  padding-top: 25px;
-	  text-align: left;
-	  box-sizing: border-box;
-	  border-radius: 0 0 6px 6px;
+.card .photo {
+    background-size: contain;
+    overflow: hidden;
 }
-.details > div {
-	  line-height: 1.8em;
-	  word-spacing: 3px;
+.isan .photo {
+    background-image: url(/images/isan.jpg);
+    background-size: 110%;
+    background-position: 0% 20%;
 }
-.details > div .icon {
-	  padding: 0 15px;
-	  font-size: 18px;
-	  color: #00ffff;
+.info-box {
+    position: absolute;
+    width: 100%;
+    height: 32%;
+    bottom: 0;
+    box-sizing: border-box;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+.info-box.view {
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+}
+.detailed-info {
+    background: #f9f9f9;
+    color: #a6a6a6;
+    padding: 10px 0px;
+    border-radius: 0px 0px 6px 6px;
+}
+.detailed-info > div {
+    line-height: 1.8em;
+    word-spacing: 3px;
+}
+.detailed-info > div .icon {
+    padding: 0px 15px;
+    font-size: 18px;
+    color: #00ffff;
 }
 
-.card .back {
-	  border: 0.5px dashed grey;
-	  background-color: #fff;
-	  -webkit-transform: rotateY(-180deg);
-          	transform: rotateY(-180deg);
+/*triggering button*/
+.trigger-button {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2.5em;
+    z-index: 3;
+    top: 10px;
+    right: 15px;
 }
-.card .back .description {
-	  color: #a6a6a6;
-	  padding: 30px;
-	  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.trigger-button::after {
+    content: '\229A';
+    color: #fff;
+    transition: all 0.5s ease;
 }
-.card .back .description p {
-	  padding-bottom: 5px;
+.trigger-button:hover::after {
+    content: '\2299';
+    color: #8d8d8d;
+}
+.trigger-button.view::after {
+    content: '\229D';
+    color: #8d8d8d;
+}
+/*overlay content*/
+.overlay {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 2;
+    border-radius: 6px 6px 0 0;
+}
+.overlay.view {
+    height: 82%;
+    opacity: 1;
+    visibility: visible;
+}
+.about-me {
+    color: #a6a6a6;
+    padding: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .button-wrapper {
-	  position: absolute;
-	  display: flex;
-	  left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    background: #fff;
+    padding: 0 70px;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all 0.5s ease;
 }
-.buttons {
-    padding: 12px 25px;
+.button-wrapper.view {
+    height: 18%;
+    border-radius: 0 0 6px 6px;
+    opacity: 1;
+    visibility: visible;
+}
+.button-wrapper .buttons {
+    padding: 12px 24px;
     margin: 15px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #fff;
+    background: #fff;
     color: #a6a6a6;
     border-radius: 4px;
     border: 2px solid #a6a6a6;
     transition: all 0.5s;
 }
-.buttons:hover {
+.button-wrapper .buttons:hover {
     color: #fff;
     background-color: #a6a6a6;
 }

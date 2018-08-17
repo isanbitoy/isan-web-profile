@@ -1,10 +1,10 @@
 <template>
 	<div class="social-wrapper">
 		<div class="social-icon-container">
-      <a v-bind:href="fbLink" target="_blank" v-bind:title="fbTitle" class="fa fa-facebook"></a>
-      <a v-bind:href="gitLink" target="_blank" v-bind:title="gitTitle" class="fa fa-github"></a>
-      <a v-bind:href="googleLink" target="_blank" v-bind:title="googleTitle" class="fa fa-google"></a>
-      <a v-bind:href="codepenLink" target="_blank" v-bind:title="codepenTitle" class="fa fa-codepen"></a>
+      <a v-bind:href="fbLink" target="_blank" v-bind:title="fbTitle" class="fa fa-facebook animated pulse"></a>
+      <a v-bind:href="gitLink" target="_blank" v-bind:title="gitTitle" class="fa fa-github animated pulse"></a>
+      <a v-bind:href="googleLink" target="_blank" v-bind:title="googleTitle" class="fa fa-google animated pulse"></a>
+      <a v-bind:href="codepenLink" target="_blank" v-bind:title="codepenTitle" class="fa fa-codepen animated pulse"></a>
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
   	text-align: center;
   	justify-content: center;
   	text-decoration: none;
-  	border: 4px solid #fff;
+  	border: 4px solid #dcdcdc;
     transition: all 0.5s;
     background: #fff;
 }
