@@ -24,8 +24,12 @@
       </div>
     </div>
     <div class="button-wrapper" v-bind:class="{ view:isActive }">
-      <a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-a"><span>Portfolio&nbsp;</span></button></a>
-      <a href="https://isanbitoy.github.io/resume/" target="_blank"><button class="buttons button-b"><span>Resume&nbsp;</span></button></a>
+      <a href="https://isanbitoy.github.io/resume/" target="_blank">
+        <button class="buttons button-a"><span>Portfolio&nbsp;</span></button>
+      </a>
+      <a href="https://isanbitoy.github.io/resume/" target="_blank">
+        <button class="buttons button-b"><span>Resume&nbsp;</span></button>
+      </a>
     </div>
     <span class="trigger-button" v-bind:class="{ view:isActive }" @click="toggleActive()"></span>
   </div>
@@ -39,11 +43,12 @@
 }
 /*content wrapper*/
 .home-wrapper {
-	  position: absolute;
-	  top: 50%;
+	position: absolute;
+	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* front content */
 .card {
     position: relative;
@@ -132,10 +137,11 @@
     content: '\229D';
     color: #8d8d8d;
 }
+
 /*overlay content*/
 .overlay {
     position: absolute;
-    background: #fff;
+    background: #f9f9f9;
     width: 100%;
     height: 0%;
     top: 0;
@@ -144,10 +150,10 @@
     visibility: hidden;
     transition: all 0.5s ease;
     z-index: 2;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px; /*6px 0 0;*/
 }
 .overlay.view {
-    height: 82%;
+    height: 100%;
     opacity: 1;
     visibility: visible;
 }
@@ -162,15 +168,15 @@
 .button-wrapper {
     position: absolute;
     display: flex;
-    background: #fff;
-    padding: 0 70px;
+    background: #f9f9f9;
+    padding: 10px 70px;
     width: 100%;
-    height: 0%;
+    height: 32%;
     bottom: 0;
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    transition: all 0.5s ease;
+    transition: all  0.5s ease;
 }
 .button-wrapper.view {
     height: 18%;
@@ -188,7 +194,7 @@
     color: #a6a6a6;
     border-radius: 4px;
     border: 2px solid #a6a6a6;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 .button-wrapper .buttons:hover {
     color: #fff;
@@ -209,11 +215,11 @@ export default {
 						{marker: 'fa fa-envelope', info: 'isanbitoy@gmail.com'}
 				  	],
 			description: [
-							'Lisandro is a full-stack web developer, mobile app and indie game developer. Proficient with various programming languages such as Java, Python, HTML5/CSS3, JavaScript and SQL.',
-              'He is fueled by his passion and interest for developing new exciting technologies that indulge his enthusiastic personality. Eager to strengthen and widen the scope on his academic foundation in information technology. Already developed some projects which he shares in the open source community.',
-							'On his free time you find him playing basketball, cycling, and listening to music. He is an avid fan of tv series and old movies, a pet lover and an active student of a brazilian jiu-jitu.',
-							'Lisandro is currently working as a freelancer and is always interested in challenges, he receieve various freelance project such as front-end development and game character design.'
-						 ]
+					'Lisandro is a full-stack web developer, mobile app and indie game developer. Proficient with various programming languages such as Java, Python, HTML5/CSS3, JavaScript and SQL.',
+                    'He is fueled by his passion and interest for developing new exciting technologies that indulge his enthusiastic personality. Eager to strengthen and widen the scope on his academic foundation in information technology. Already developed some projects which he shares in the open source community.',
+					'On his free time you find him playing basketball, cycling, and listening to music. He is an avid fan of tv series and old movies, a pet lover and an active student of a brazilian jiu-jitu.',
+					'Lisandro is currently working as a freelancer and is always interested in challenges, he receieve various freelance project such as front-end development and game character design.'
+					]
 		}
 	},
 	methods: {
