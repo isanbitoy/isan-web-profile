@@ -14,13 +14,13 @@ export default {
 	data() {
 		return {
 			fbLink: 'https://www.facebook.com/lisandro.bitoya',
-      fbTitle: 'add me on Facebook',
+      fbTitle: 'add me on my Facebook',
       gitLink: 'https://github.com/isanbitoy',
-      gitTitle: 'check my projects on GitHub',
+      gitTitle: 'check my open source projects on GitHub',
       googleLink: 'https://plus.google.com/u/0/116882088650278653825',
       googleTitle: 'circle me on Google+',
       codepenLink: 'https://codepen.io/isanbitoy/',
-      codepenTitle: 'check my profile on Codepen'
+      codepenTitle: 'check my awesome profile on Codepen'
 		}
 	}
 }
