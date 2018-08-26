@@ -38,16 +38,15 @@ export default {
     text-align: center;
 }
 .fa {
-  	padding: 25px;
-  	margin: 5px;
+  	padding: 24px;
+  	margin: 6px;
   	font-size: 24px;
   	width: 80px;
-  	height: auto;
   	border-radius: 50%;
   	text-align: center;
   	justify-content: center;
   	text-decoration: none;
-  	border: 4px solid #dcdcdc;
+  	border: 3px solid #dcdcdc;
     transition: all 0.5s;
     background: #fff;
 }
