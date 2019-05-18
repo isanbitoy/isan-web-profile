@@ -1,0 +1,107 @@
+/*extends flex properties*/
+%flex-property {
+	flex: 0 0 50%; 
+	padding: 1rem;
+}
+#about-page {
+	@include const-center-position;
+	@include set-dimensions(100%, auto);
+}
+.about__section {
+	@include set-flex(column, no-wrap, none, none);
+	@include tablet-view { flex-direction: row; }
+	padding: 1rem 0;
+	a {
+		@extend %flex-property;
+		@include set-flex(none, no-wrap, center, center);
+		figure {
+			position: relative;
+			width: 19em;
+			img {
+				@include set-dimensions(100%, auto);
+				padding-top: 0.5rem; 
+				box-sizing: content-box;
+			}
+			span {
+				@include set-font('Montserrat', 0.8em, none);
+				position: absolute;
+				top: 95%; left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	div {
+		@extend %flex-property;
+		@include set-transition(all, 1s);
+		p {
+			@include set-font('Montserrat', 0.9em, none);
+			@include tablet-view {
+				font-size: 1em;
+			}
+			line-height: 1.6em;
+			color: darken($white, 65%);
+		}
+	}
+}
+.skill__section {
+	@include const-center-position;
+	h2 { padding: 0 0.5em; }
+	ul {
+		@include set-flex(row, wrap, none, center);
+		.content-box {
+			//@extend %fromBottomToTop;
+			@include set-dimensions(14em, 12em);
+			@include set-transition(all, 1s);
+			position: relative;
+			margin: 1.5em; 
+			box-sizing: border-box;
+			box-shadow: 0 2px 4px rgba(0,0,0,.2);
+			border: 0.5px solid darken($white, 12%);
+			user-select: none; overflow: hidden;
+			span:first-child {
+				@include set-dimensions(100%, 100%);
+				@include set-transition(all, 0.5s);
+				position: absolute;
+				top: 0; left: 0;
+				.fa {
+					@include set-transition(all, 0.5s);
+					top: 50%; left: 50%;
+					transform: translate(-50%, -50%);
+					position: absolute; font-size: 5em;
+				}
+				.fa-css3 { color: $sky-blue;}
+				.fa-database { color: $orange; }
+				.fa-code { color: $purple; }
+			}
+			&:hover span:first-child {
+				@include set-dimensions(80px, 80px);
+				top: 25px; left: calc(50% - 40px);
+				border-radius: 50%;
+				.fa {
+					@include set-flex(none, none, center, center);
+					@include set-dimensions(80px, 80px);
+					@include set-border(2px, $white, 50%)
+					font-size: 40px; color: $white;
+				}
+				.fa-css3 { background: $sky-blue; }
+				.fa-database { background: $orange; }
+				.fa-code { background: $purple; }
+			}
+			span:last-child {
+				@include set-transition(all, 0.5s);
+				position: absolute;
+				padding: 12px;
+				height: calc(100% - 105px);
+				top: 115px; left: 50%; 
+				transform: translateX(-50%);
+				box-sizing: border-box;
+				text-align: center;
+				opacity: 0;
+			}
+			&:hover span:last-child {
+				opacity: 1;
+				top: 105px;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+[data-tooltip]::before {
+	  @include set-dimensions(95px, auto);
+	  @include set-transition(all, 0.5s);
+	  content: attr(data-tooltip);
+	  position: absolute;
+	  top: 120%; left: 50%;
+  	margin-top: 5px;
+  	margin-left: -50px;
+  	padding: 7px;
+
+  	visibility: hidden;
+	  opacity: 0;
+	  pointer-events: none;
+  	
+  	-webkit-border-radius: 8px 0 8px 0;
+  	-moz-border-radius: 8px 0 8px 0;
+  	border-radius: 8px 0 8px 0;
+  	
+  	background: $sky-blue;
+  	color: $white;
+ 
+  	text-align: center;
+  	font-size: 14px;
+  	line-height: 1.2;
+
+    transform: translateY(8px);
+}
+
+
+[data-tooltip]:hover::before {
+	visibility: visible;
+	opacity: 1;
+  transform: translateY(0px);
+}

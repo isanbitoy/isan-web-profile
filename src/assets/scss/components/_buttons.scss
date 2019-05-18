@@ -1,0 +1,44 @@
+%center-fix {
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+.menu__button {
+	@include set-dimensions(4rem, 4rem);
+	position: relative;
+	overflow: hidden;
+	a {
+		@include set-dimensions(3rem, 3rem);
+		@include set-transition(all, 0.5s);
+		@extend %center-fix;
+		position: absolute;
+		background: $layout-color;
+		border: 1px solid lighten($layout-color, 25%);
+		border-radius: 50%;
+		cursor: pointer;
+		&::before {
+			@extend %center-fix;
+			content: '+';
+			position: absolute;
+			font-size: 2.5rem;
+			font-weight: bolder;
+			color: $white;
+		}
+	}
+	&:hover a {
+		background: darken($layout-color, 5%);
+		@include radial-pulse(2s);
+	}
+}
+button[name="form_submit"] {
+	@include set-border(1px, darken($white, 35%), 2px);
+	@include set-transition(all, 0.5s);
+	padding: 12px 24px; 
+	float: right;
+	color: darken($white, 35%); 
+	background: darken($white, 2%);
+	cursor: pointer;
+	&:hover {
+		color: lighten($sky-blue, 15%); 
+		@include set-border(1px, lighten($sky-blue, 20%), 2px);
+	}
+}
