@@ -43,7 +43,7 @@ export default {
 		return {
 			setRestriction: true,
 			setAboutVisibility: false,
-			resumeLink: 'https://isanbitoy.github.io/resume/',
+			resumeLink: '/files/Lisandro_A_Bitoy_Resume.pdf',
 			about_me: "Hi I'm Lisandro, a full-stack web and software developer. Though I consider front-end development as my core strength and a hobby. Which I developed some projects that already endorsed within the open source community. On my free time you'll find me playing basketball, cycling, and coding. A certified pet lover, tech enthusiast, and an avid fan of movies & TV series.",
 			icons: [
 				{ 

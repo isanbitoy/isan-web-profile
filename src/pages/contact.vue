@@ -92,10 +92,24 @@ export default {
 			setContactVisibility: false,
 			year: new Date().getFullYear(),
 			icons: [
-				{ socialIcon: 'fa fa-google', mediaLink: '', mediaToolTip: 'Facebook' },
-				{ socialIcon: 'fa fa-youtube', mediaLink: '', mediaToolTip: 'Youtube' },
-				{ socialIcon: 'fa fa-codepen', mediaLink: '', mediaToolTip: 'Codepen' },
-				{ socialIcon: 'fa fa-github', mediaLink: '', mediaToolTip: 'Github' }
+				{ 
+					socialIcon: 'fa fa-google', 
+					mediaLink: 'https://aboutme.google.com/?hl=en-GB', 
+					mediaToolTip: 'Facebook' 
+				},
+				{ 
+					socialIcon: 'fa fa-youtube', 
+					mediaLink: 'https://www.youtube.com/channel/UCv0Y8wFLkI8ETRPpCUy2Ojw?view_as=subscriber', 
+					mediaToolTip: 'Youtube' },
+				{ 
+					socialIcon: 'fa fa-codepen', 
+					mediaLink: 'https://codepen.io/isanbitoy/', 
+					mediaToolTip: 'Codepen' },
+				{ 
+					socialIcon: 'fa fa-github', 
+					mediaLink: 'https://github.com/isanbitoy', 
+					mediaToolTip: 'Github' 
+				}
 			]
 		}
 	},
