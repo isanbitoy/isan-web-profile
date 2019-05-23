@@ -37,7 +37,7 @@ export default {
 		return {
 			setRestriction: true,
 			setPortfolioVisibility: false,
-			placeHolder: 'http://placehold.it/250x250',
+			placeHolder: 'https://placehold.it/250x250',
 			projects: [
 				{
 					img: '/img/portfolio/PiNoise.png',
@@ -61,7 +61,13 @@ export default {
 					img: '',
 					projTitle: 'vue-skill-bar',
 					url: 'https://isanbitoy.github.io/vue-skill-bar/',
-					desc: 'a vue component that display skill bar progress'
+					desc: 'a vuejs component libray that display skill bar progress'
+				},
+				{
+					img: '',
+					projTitle: 'vus-vue-slide-onscroll',
+					url: 'https://isanbitoy.github.io/vue-slide-onscroll/',
+					desc: 'a simple slide transition on scroll fro vue'
 				}
 			]
 		}
