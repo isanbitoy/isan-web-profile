@@ -1,0 +1,32 @@
+[
+	{
+		"img": "https://drive.google.com/uc?id=1IkvPKR0FSspLh7hP-s4P--cAdYNF5x8Q",
+		"projTitle": "PiNoise: All pinoy news",
+		"url": "https://isanbitoy.github.io/PiNoise/",
+		"desc": "Philippines news portal powered by NewsAPI.org"
+	},
+	{
+		"img": "https://drive.google.com/uc?id=1HA172BqyqYjn9gpGf9Aw-Av53LzozDDu",
+		"projTitle": "Chain Break",
+		"url": "",
+		"desc": "a platformer libgdx game"
+	},
+	{
+		"img": "",
+		"projTitle": "PanPan Holiday",
+		"url": "",
+		"desc": "a casual libgdx game"
+	},
+	{
+		"img": "https://drive.google.com/uc?id=1pYTZx0BnaeMvoW0cqMOn5kFVWk5HvtfX",
+		"projTitle": "vue-skill-bar",
+		"url": "https://isanbitoy.github.io/vue-skill-bar/",
+		"desc": "a vuejs component libray that display skill bar progress"
+	},
+	{
+		"img": "https://drive.google.com/uc?id=1y-wloGuEc-tadc4An1AGVQVF00_tQpIF",
+		"projTitle": "vue-slide-onscroll",
+		"url": "https://isanbitoy.github.io/vue-slide-onscroll/",
+		"desc": "a simple slide transition on scroll for vue"
+	}
+]
