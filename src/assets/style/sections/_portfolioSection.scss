@@ -1,0 +1,66 @@
+#portfolio-section {
+	@include const-center-position;
+	@include set-dimensions(100%, auto);
+	padding: 0 1rem;
+	.grid__layout {
+		padding: 2rem 0;
+		ul { 
+			@include set-grid; 
+			margin: 0.5rem 0;
+		}
+		li {
+			position: relative;
+			box-sizing: border-box;
+			box-shadow: 0 2px 2px 0 rgba(45,54,65,0.1), 
+						0 3px 6px 0 rgba(45,54,65,0.1),
+						0 3px 1px -2px rgba(45,54,65,.15);
+			background: darken($white, 6%);
+			article {
+				@include set-dimensions(100%, 320px);
+				border-radius: 3px;
+				overflow: hidden;
+				.box__figure {
+					@include set-dimensions(inherit, auto);
+					.fa-link {
+						@include set-transition(all, 0.5s);
+
+						position: absolute;
+						top: 50%; left: 45%;
+						transform: translate(-50%, -50%);
+
+						color: $white;
+						background: $link-color;
+						width: 21px; height: 21px;
+						border-radius: 50%;
+						opacity: 0;
+						z-index: 1;
+						transform: scale(2);
+
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					img {
+						@include set-dimensions(100%, auto);
+						object-fit: cover;
+					}
+				}
+				.box__info {
+					@include set-dimensions(inherit, auto);
+					padding: 0.5rem;
+					.content--desc {
+						@include set-font('Gentona', 14px, darken($white, 60%));
+						padding-top: 0.5rem;
+
+					}
+				}
+				&:hover { opacity: 0.7; }
+				&:hover .fa-link {
+					opacity: 0.8;
+					transform: scale(4);
+				}
+			}
+			
+		}
+	}
+}
