@@ -6,5 +6,8 @@
 
 module.exports = {
   siteName: 'Isan',
-  plugins: []
+  plugins: [],
+  icon: {
+  	favicon: './src/favicon.ico'
+  }
 }
