@@ -1,6 +1,6 @@
 <template>
 	<section id="contact-section">
-		<div class="contact__section">
+		<div class="contact__layout">
 			<div class="form__wrapper">
 
 				<div class="info-box">
@@ -82,7 +82,6 @@
 export default {
 	data: () => {
 		return {
-			year: new Date().getFullYear(),
 			icons: [
 				{ 
 					socialIcon: 'fa fa-google', 

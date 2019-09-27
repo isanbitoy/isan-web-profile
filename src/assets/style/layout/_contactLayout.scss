@@ -1,28 +1,19 @@
 %fieldset-shared {
-	@include set-border(1px, darken($white, 25%), 2px);
+    @include set-border(1px, darken($white, 25%), 2px);
     width: 100%; 
     padding: 10px; 
     margin: 0 0 5px;
-    background: darken($white, 2%);
-}
-#contact-section {
-	@include const-center-position; 
-    @include set-dimensions(100%, auto);
-}
-.contact__section {
-	padding: 2rem 1rem 0 1rem;
+    background: $white;
 }
 .form__wrapper {
 	@include set-flex(column, wrap, none, center); 
     @include tablet-view { flex-direction: row; }
     .info-box {
-        @include set-font('Poppins', 1rem, none);
         @include tablet-view { font-size: 1.2rem; }
         padding: 0 0 1rem 0;
         flex: 1 0 50%;
         .info-box__detail {
         	@include set-flex(row, no-wrap, center, none); 
-        	@include set-transition(all, 0.5s);
         	padding: 0.5rem 0;
         	i {
         		@include set-flex(none, no-wrap, center, center); 
@@ -39,69 +30,42 @@
         	div {
 				@include set-flex(column, no-wrap, none, none);
 				padding: 0 0.5rem;
+                font-size: 1rem;
 				span {
-	               	&:first-child {
-	                    color: $sky-blue;
-	                }
-	                &:last-child {
-	                	font-size: 1rem;
-	                    color: darken($white, 75%);
-	                }
+	               	&:first-child { color: $sky-blue; }
+	                &:last-child { color: darken($white, 85%); }
             	}
         	}
         }
         p { 
-        	@include set-font('Poppins', 1rem, #111);
-        	@include set-transition(all, 0.5s);
         	@include tablet-view {
                 font-size: 1.2rem;
             }
         	padding: 1em 0;
         }
-        ul { margin-bottom: 1rem; }
         li {
             display: inline-block; 
             padding: 0 14px;
             .fa {
-            	@include set-flex(none, no-wrap, center, center); 
-            	@include set-transition(all, 0.5s);
-            	@include set-dimensions(46px, 46px);
-            	@include tablet-view {
-                    @include set-dimensions(52px, 52px);
-                    font-size: 1.6rem;
+                @include set-dimensions(42px, 42px);
+                @include tablet-view {
+                    @include set-dimensions(48px, 48px);
+                    font-size: 3rem;
                 }
-            	font-size: 1.4rem;
-            	border-radius: 4px;
-            	overflow: hidden;
-            	-webkit-transform: rotate(45deg);
-            	transform: rotate(45deg);
-            	-webkit-box-sizing: content-box;
-            	box-sizing: content-box;
-            	&::before {
-            		-webkit-transform: rotate(-45deg);
-            		transform: rotate(-45deg);
-            	}
-            }     
-            .fa-google { 
-                color: $white;
-                background: $google-color;
-            }
-            .fa-youtube { 
-                color: $white;
-                background: $youtube-color;
-            }
-            .fa-codepen { 
-                color: $white;
-                background: $codepen-color;
-            }
-            .fa-github { 
-                color: $white;
-                background: $github-color;
-            }
+                font-size: 2rem;
+                text-align: center;
+                padding: 0.5rem 0;
+            }  
+            .fa-google { color: $google-color; }
+            .fa-youtube { color: $youtube-color; }
+            .fa-codepen { color: $codepen-color; }
+            .fa-github { color: $github-color; }
         }
     }
     .form-box {
     	flex: 1 0 50%;
+        @include tablet-view { padding: 0; }
+        padding: 1rem 0;
     	fieldset {
     		margin: 0 0 10px;
     		border: medium none !important;
@@ -121,7 +85,7 @@
                 resize: none;
                 &:focus {
                     outline: 0;
-                    border: 2px solid lighten($sky-blue, 25%);
+                    border: 1px solid lighten($sky-blue, 25%);
                 }
             }
     	}

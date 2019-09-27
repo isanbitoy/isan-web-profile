@@ -1,39 +1,29 @@
 <template>
-	<div class="header-background">
-		<div class="blur-background"></div>
-		<section id="header-layout">
-			<div class="navigation__bar">
-				<div>
-					<figure class="img__box">
-						<g-image class="nav-img" :src="imgLink" />
-					</figure>
-					<div class="info__box">
-						<h1 class="author__name">LISANDRO BITOY</h1>
-						<ul>
-							<li>
-								<span data-tooltip="My Resume">
-									<a :href="resumeLink" target="_blank">Resume</a>
-								</span>
-							</li>
-							<li>
-								<span data-tooltip="My Blog">
-									<a href="" target="_blank">Blog site</a>
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+	<header>
+		<div class="progress__container">
+			<div class="progress__container--bar" id="progressBar"></div>
+		</div>
+	</header>
 </template>
 
 <script>
 export default {
-	data: () => {
-		return {
-			imgLink: '/img/author.jpg',
-			resumeLink: 'https://drive.google.com/uc?id=127ycVo1WmdqHIK-PWE_ZU4avDGnfHYlP'
+	methods: {
+		onScroll: function() {
+			let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			let scrolled = (winScroll / height) * 100;
+			document.querySelector('#progressBar').style.width = scrolled + "%";
+		}
+	},
+	created: function() {
+		if (process.browser) {
+			window.addEventListener('scroll', this.onScroll)
+		}
+	},
+	destroyed: function() {
+		if (process.browser) {
+			window.removeEventListener('scroll', this.onScroll)
 		}
 	}
 };

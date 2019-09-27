@@ -1,5 +1,5 @@
 {
-  "name": "isan-web-profile-v2",
+  "name": "isan-web-profile-v4",
   "private": true,
   "scripts": {
     "build": "gridsome build",

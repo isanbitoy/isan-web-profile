@@ -1,15 +1,18 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import 'abstract/variables';
+@import 'abstract/mixins';
 
 @import 'base/reset';
-@import 'base/transition';
 
-@import 'components/tooltip';
-@import 'components/button';
+@import 'component/button';
+@import 'component/profileImage';
+@import 'component/tooltip';
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/aboutLayout';
+@import 'layout/contactLayout';
+@import 'layout/portfolioLayout';
 
-@import 'sections/aboutSection';
-@import 'sections/portfolioSection';
-@import 'sections/contactSection';
+@import 'section/aboutSection';
+@import 'section/portfolioSection';
+@import 'section/contactSection';

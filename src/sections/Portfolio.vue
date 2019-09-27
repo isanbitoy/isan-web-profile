@@ -1,35 +1,35 @@
 <template>
 	<section id="portfolio-section">
-		<div class="grid__layout">
-			<h2>Portfolio</h2>
-			<ul>
-				<li v-for="(project, index) in projectData" :key="index">
-					<a :href="project.url" target="_blank">
-						<article>
-							<figure class="box__figure">
-								<i class="fa fa-link"></i>
-								<img :src="project.img ? project.img : placeHolder" />
-							</figure>
-							<div class="box__info">
-								<h4 class="content--title">{{ project.projTitle }}</h4>
-								<p class="content--desc">{{ project.desc }}</p>
-							</div>
-						</article>
-					</a>
-				</li>
-			</ul>
+		<div class="div-line"></div>
+		<div class="portfolio-layout">
+			<h3>List of all projects I developed</h3>
+			<table>
+				<tbody>
+					<tr v-for="(project, index) in projects" :key="index">
+						<a :href="project.url" target="_blank">
+							<td>
+								<i class="fa fa-check"></i>
+								<div class="table-info">
+									<span>{{ project.projTitle }}</span>
+									<span>{{ project.desc }}</span>
+								</div>
+							</td>
+						</a>
+					</tr>
+				</tbody>
+			</table>
 		</div>
+		<div class="div-line"></div>
 	</section>
 </template>
 
 <script>
-import projectData from '~/assets/data/project.json'
+import projects from '~/assets/data/project.json'
 
 export default {
 	data: () => {
 		return {
-			placeHolder: '/portfolio/page_not_found.jpg',
-			projectData
+			projects
 		}
 	}
 };
