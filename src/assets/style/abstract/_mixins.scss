@@ -1,0 +1,71 @@
+/*clear content*/
+@mixin clear-fix {
+	content: '';
+	display: block;
+	clear: both;
+}
+/*constant position and width*/
+@mixin const-center-position {
+	//position: relative;
+	max-width: 54rem;
+	margin: 0 auto;
+}
+/*width & height dimensions*/
+@mixin set-dimensions($width, $height) {
+	width: $width; height: $height;
+}
+/*flex layout*/
+@mixin set-flex($direction, $content, $item-align, $content-align) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $content;
+	align-items: $item-align;
+	justify-content: $content-align;
+}
+/*set border settings*/
+@mixin set-border($thickness, $border-color, $radius) {
+	border: $thickness solid $border-color;
+	border-radius: $radius;
+}
+/*set transition animation*/
+@mixin set-transition($mode, $duration) {
+	transition: $mode $duration ease;
+}
+@mixin radial-pulse($duration) {
+    animation: animate $duration linear infinite;
+    @keyframes animate {
+        0% {
+            box-shadow: 0 0 0 0 rgba(10,74,61,0.4), 0 0 0 0 rgba(10,74,61,0.4);
+        }
+        40% {
+            box-shadow: 0 0 0 8px rgba(10,74,61,0), 0 0 0 0 rgba(10,74,61,0.4);
+        }
+        80% {
+            box-shadow: 0 0 0 8px rgba(10,74,61,0), 0 0 0 6px rgba(10,74,61,0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(10,74,61,0), 0 0 0 6px rgba(10,74,61,0);
+        }
+    }
+}
+
+/*
+=========================================
+			MEDIA QUERIES
+=========================================
+*/
+@mixin phone-view {
+	@media only screen and (min-width: 30rem) {
+		@content;
+	}
+}
+@mixin tablet-view {
+	@media only screen and (min-width: 48rem) {
+		@content;
+	}
+}
+@mixin desktop-view {
+	@media only screen and (min-width: 65rem) {
+		@content;
+	}
+}
