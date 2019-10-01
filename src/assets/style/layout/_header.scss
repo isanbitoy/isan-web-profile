@@ -1,0 +1,13 @@
+header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+.progress__container {
+	@include set-dimensions(100%, 6px);
+}
+.progress__container--bar {
+	@include set-dimensions(0%, 6px);
+	background: $link-color;
+}
