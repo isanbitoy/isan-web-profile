@@ -5,9 +5,9 @@ header {
 	width: 100%;
 }
 .progress__container {
-	@include set-dimensions(100%, 6px);
+	@include set-dimensions(100%, 4px);
 }
 .progress__container--bar {
-	@include set-dimensions(0%, 6px);
+	@include set-dimensions(0%, 4px);
 	background: $link-color;
 }

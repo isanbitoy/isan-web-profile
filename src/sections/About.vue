@@ -2,13 +2,15 @@
 	<section id="about-section">
 
 		<div class="header__layout">
-			<a href="">
+			<div>
 				<figure class="header__layout--image">
 					<img :src="imgLink" />
 				</figure>
-			</a>
+			</div>
 			<div class="header__layout--info">
-				<h1>Lisandro Bitoy</h1>
+				<div class="name-info">
+					<h1>Lisandro Bitoy</h1>
+				</div>
 				<div class="sub-info">
 					<span>full-stack web developer</span>
 					<span>software developer</span>

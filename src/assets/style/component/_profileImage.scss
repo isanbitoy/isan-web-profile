@@ -3,6 +3,7 @@
 	border: 3px solid $link-color;
 	border-radius: 50%;
 	overflow: hidden;
+	margin: 0 0 0 0.5rem;
 	img {
 		@include set-dimensions(100%, auto);
 		box-sizing: content-box;

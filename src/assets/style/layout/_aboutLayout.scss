@@ -1,14 +1,21 @@
 .header__layout {
 	@include set-flex(column, nowrap, center, none);
-	text-align: center;
 	@include tablet-view {
 		flex-direction: row;
 		text-align: left;
 	}
+	text-align: center;
 	.header__layout--info {
-		padding: 0 2rem;
+		padding: 0 1.5rem;
+		.name-info {
+			padding: 0 1.4rem;
+		}
 		.sub-info {
 			@include set-flex(row, wrap, none, center);
+			@include tablet-view {
+				justify-content: left;
+				padding: 0 1.5rem;
+			}
 			span {
 				color: darken($white, 65%);
 				text-transform: uppercase;
@@ -38,6 +45,10 @@
 			padding: 0 1rem;
 			font-weight: 600;
 			text-transform: uppercase;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 			@include tablet-view {
 				padding: 0.3rem 0;
 			}
