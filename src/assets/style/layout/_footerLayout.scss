@@ -1,0 +1,12 @@
+footer {
+	@include sans-serif-font();
+	@include set-flex(row, wrap, center, center);
+	@include set-dimensions(100%, auto);
+	bottom: 0; left: 0;
+	padding: 1rem;
+	background: $header-color;
+	color: $white;
+	span {
+		padding: 0 3px;
+	}
+}
