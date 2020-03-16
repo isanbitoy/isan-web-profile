@@ -1,0 +1,37 @@
+[
+	{
+		"projTitle": "PiNoise: All pinoy news",
+		"url": "https://isanbitoy.github.io/PiNoise/",
+		"desc": "Philippines news portal powered by NewsAPI.org"
+	},
+	{
+		"projTitle": "Chain Break",
+		"url": "",
+		"desc": "a platformer libgdx game"
+	},
+	{
+		"projTitle": "PanPan Holiday",
+		"url": "",
+		"desc": "a casual libgdx game"
+	},
+	{
+		"projTitle": "vue-skill-bar",
+		"url": "https://isanbitoy.github.io/vue-skill-bar/",
+		"desc": "a vuejs component library that display skill bar progress"
+	},
+	{
+		"projTitle": "vue-slide-onscroll",
+		"url": "https://isanbitoy.github.io/vue-slide-onscroll/",
+		"desc": "a simple slide transition on scroll for vue"
+	},
+	{
+		"projTitle": "vue-basic-tooltip",
+		"url": "https://isanbitoy.github.io/vue-basic-tooltip/",
+		"desc": "a basic vuejs based tooltip"
+	},
+	{
+		"projTitle": "CS315 - System Analysis & Design Project",
+		"url": "https://jres-ais-docs.netlify.com/",
+		"desc": "a compiled documentation of Jose Rizal academic information system"
+	}
+]

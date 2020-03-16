@@ -1,0 +1,9 @@
+footer {
+	@include set-flex(row, wrap, center, center);
+	/*padding: 0.5rem 1rem;*/
+	height: 8vh;
+	color: darken($white, 75%);
+	span {
+		padding: 0 3px;
+	}
+}

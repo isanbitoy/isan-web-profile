@@ -1,0 +1,67 @@
+@mixin serif-font() {
+	/*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+@mixin sans-serif-font() {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+/*clear content*/
+@mixin clear-fix() {
+	content: '';
+	display: block;
+	clear: both;
+}
+/*constant position and width*/
+@mixin const-center-position() {
+	//position: relative;
+	max-width: 54rem;
+	margin: 0 auto;
+}
+/*width & height dimensions*/
+@mixin set-dimensions($width, $height) {
+	width: $width; height: $height;
+}
+/*flex layout*/
+@mixin set-flex($direction, $content, $item-align, $content-align) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $content;
+	align-items: $item-align;
+	justify-content: $content-align;
+}
+/*grid layout*/
+@mixin set-grid {
+	display: grid; grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-auto-rows: auto;
+	margin: 0 auto;
+}
+@mixin set-border($thickness, $border-color, $radius) {
+	border: $thickness solid $border-color;
+	border-radius: $radius;
+}
+/*transition animation*/
+@mixin set-transition($mode, $duration) {
+	transition: $mode $duration ease;
+}
+
+/*
+=========================================
+			MEDIA QUERIES
+=========================================
+*/
+@mixin phone-view {
+	@media only screen and (min-width: 30rem) {
+		@content;
+	}
+}
+@mixin tablet-view {
+	@media only screen and (min-width: 48rem) {
+		@content;
+	}
+}
+@mixin desktop-view {
+	@media only screen and (min-width: 65rem) {
+		@content;
+	}
+}
