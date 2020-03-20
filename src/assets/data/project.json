@@ -33,5 +33,10 @@
 		"projTitle": "CS315 - System Analysis & Design Project",
 		"url": "https://jres-ais-docs.netlify.com/",
 		"desc": "a compiled documentation of Jose Rizal academic information system"
+	},
+	{
+		"projTitle": "CS272 - Dissertation Project",
+		"url": "https://addu-sso-docs.netlify.com/",
+		"desc": "a single sign-on for AdDU academic information system using java-based authentication platform"
 	}
 ]
